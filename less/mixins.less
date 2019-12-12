@@ -8,7 +8,23 @@
     border-radius: 15px;
     cursor: pointer;
 
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+    }
+
     &:hover{
         background-color: darken(@button-bg, 20%);
     }
 }
+
+.animation(@flash) {
+	animation: @flash;
+}
+
+.keyframes(fade-in;{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    });
+
+.animation(fade-in 0.5s linear infinite alternate)

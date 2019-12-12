@@ -7,6 +7,10 @@
     margin-top: 1.5% auto;
     width: 80%;
     
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
  
 
     .logo {
@@ -14,11 +18,21 @@
         display: flex;
         justify-content: space-around;
         margin: 2% 0 1% 20%;
+
+        @media @mobile {
+                width: 50%;
+                margin: 2% auto;
+        }
     }
 
     nav {
         justify-content: space-around;
         width: 40%;
+
+        @media @mobile {
+            justify-content: center;
+            width: 100%;
+        }
     
         a {
             padding: 0 2%;
@@ -26,13 +40,20 @@
             color: @font-color;
             font-size: 1.3rem;
             margin: 1%;
+
+            @media @mobile {
+                padding: 5%; 
+            }
         }
 
         .links{
             display: flex;
             justify-content: space-evenly;
             width: 48%;
-            
+
+            @media @mobile {
+                justify-content: space-around;   
+            }
         }
     }
     

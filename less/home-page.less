@@ -6,10 +6,6 @@ header{
 
   .welcome-text {
     width: 48%;
-
-    h2{
-        animation: @flash;
-    }
     
     @media @mobile {
       width: 90%;
@@ -136,3 +132,35 @@ header{
     }
   }
 }// home
+
+//for submit form
+.vacationForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  form {
+    border: 1px dashed @navigation-border;
+    border-radius: 15px;
+    padding: 2% 2% 1% 2%;
+  }
+  
+  input[type=text] {
+      width: 100%;
+      padding: 2%;
+      margin: 8px 0;
+      box-sizing: border-box;
+      background-color: @footer-bg;
+    }
+
+  input[type=submit] {
+    margin: 0 30% 2%;
+    padding: 2%;
+    width: 110px;
+    background-color: @button-bg;
+    border-radius: 15px;
+    color: @main-bg;
+    font-size: 1.6rem;
+  }
+
+ }

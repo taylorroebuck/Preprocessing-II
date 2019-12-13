@@ -267,35 +267,6 @@ header {
 header .welcome-text {
   width: 48%;
 }
-header .welcome-text h2 {
-  -webkit-animation: fade-in 0.5s linear infinite alternate;
-  -moz-animation: fade-in 0.5s linear infinite alternate;
-  animation: fade-in 0.5s linear infinite alternate;
-}
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media (max-width: 500px) {
   header .welcome-text {
     width: 90%;
@@ -412,4 +383,30 @@ header .main-image {
     justify-content: center;
     width: 80%;
   }
+}
+.vacationForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.vacationForm form {
+  border: 1px dashed #C0C0C0;
+  border-radius: 15px;
+  padding: 2% 2% 1% 2%;
+}
+.vacationForm input[type=text] {
+  width: 100%;
+  padding: 2%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #FFEBCD;
+}
+.vacationForm input[type=submit] {
+  margin: 0 30% 2%;
+  padding: 2%;
+  width: 110px;
+  background-color: #17A2B8;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 1.6rem;
 }

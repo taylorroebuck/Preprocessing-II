@@ -1,1 +1,26 @@
 // Mixins in here
+.btn{
+    display: inline-block;
+    background-color: @button-bg;
+    color: @main-bg;
+    font-size: 1.7rem;
+    padding: 5% 22%;
+    border-radius: 15px;
+    cursor: pointer;
+
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    &:hover{
+        background-color: darken(@button-bg, 20%);
+    }
+}
+
+@keyframes rainbow {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}

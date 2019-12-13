@@ -16,6 +16,20 @@
 .btn:hover {
   background-color: #0c525d;
 }
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -266,6 +280,12 @@ header {
 }
 header .welcome-text {
   width: 48%;
+}
+header .welcome-text h2 {
+  width: 40%;
+  animation-name: rainbow;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
 }
 @media (max-width: 500px) {
   header .welcome-text {
